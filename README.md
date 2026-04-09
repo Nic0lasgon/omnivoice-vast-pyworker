@@ -31,6 +31,16 @@ And log to:
 
 - `PYWORKER_REPO=https://github.com/Nic0lasgon/omnivoice-vast-pyworker`
 
+## Current Vast notes
+
+The worker image has been validated with the current OmniVoice flow and the current deployment uses a small writable disk footprint on Vast.
+
+For the current setup, the workergroup has been updated with:
+
+- `launch_args=--disk 15`
+
+That value is enough for the current image and runtime state.
+
 ## Recommended workergroup search filters
 
 Use datacenter-only, one-GPU workers, with your validated GPU targets:
